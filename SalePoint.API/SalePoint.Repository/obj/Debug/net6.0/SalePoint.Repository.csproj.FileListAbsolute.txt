@@ -1,0 +1,45 @@
+C:\Users\USER\Downloads\Backend Pharmacy\SalePoint.API\SalePoint.Repository\bin\Debug\net6.0\SalePoint.Repository.deps.json
+C:\Users\USER\Downloads\Backend Pharmacy\SalePoint.API\SalePoint.Repository\bin\Debug\net6.0\SalePoint.Repository.dll
+C:\Users\USER\Downloads\Backend Pharmacy\SalePoint.API\SalePoint.Repository\bin\Debug\net6.0\SalePoint.Repository.pdb
+C:\Users\USER\Downloads\Backend Pharmacy\SalePoint.API\SalePoint.Repository\bin\Debug\net6.0\SalePoint.Primitives.dll
+C:\Users\USER\Downloads\Backend Pharmacy\SalePoint.API\SalePoint.Repository\bin\Debug\net6.0\SalePoint.Primitives.pdb
+C:\Users\USER\Downloads\Backend Pharmacy\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.csproj.AssemblyReference.cache
+C:\Users\USER\Downloads\Backend Pharmacy\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Downloads\Backend Pharmacy\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.AssemblyInfoInputs.cache
+C:\Users\USER\Downloads\Backend Pharmacy\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.AssemblyInfo.cs
+C:\Users\USER\Downloads\Backend Pharmacy\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.csproj.CoreCompileInputs.cache
+C:\Users\USER\Downloads\Backend Pharmacy\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.csproj.CopyComplete
+C:\Users\USER\Downloads\Backend Pharmacy\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.dll
+C:\Users\USER\Downloads\Backend Pharmacy\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\refint\SalePoint.Repository.dll
+C:\Users\USER\Downloads\Backend Pharmacy\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.pdb
+C:\Users\USER\Downloads\Backend Pharmacy\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\ref\SalePoint.Repository.dll
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Repository\bin\Debug\net6.0\SalePoint.Repository.deps.json
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Repository\bin\Debug\net6.0\SalePoint.Repository.dll
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Repository\bin\Debug\net6.0\SalePoint.Repository.pdb
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Repository\bin\Debug\net6.0\SalePoint.Primitives.dll
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Repository\bin\Debug\net6.0\SalePoint.Primitives.pdb
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.csproj.AssemblyReference.cache
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.AssemblyInfoInputs.cache
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.AssemblyInfo.cs
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.csproj.CopyComplete
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.dll
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\refint\SalePoint.Repository.dll
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.pdb
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\ref\SalePoint.Repository.dll
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.csproj.AssemblyReference.cache
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.AssemblyInfoInputs.cache
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.AssemblyInfo.cs
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.csproj.CoreCompileInputs.cache
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.dll
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\refint\SalePoint.Repository.dll
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.pdb
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\bin\Debug\net6.0\SalePoint.Repository.deps.json
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\bin\Debug\net6.0\SalePoint.Repository.dll
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\bin\Debug\net6.0\SalePoint.Repository.pdb
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\bin\Debug\net6.0\SalePoint.Primitives.dll
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\bin\Debug\net6.0\SalePoint.Primitives.pdb
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\SalePoint.Repository.csproj.CopyComplete
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\obj\Debug\net6.0\ref\SalePoint.Repository.dll

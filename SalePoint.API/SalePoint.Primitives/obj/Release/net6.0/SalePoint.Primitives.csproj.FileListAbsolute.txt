@@ -1,0 +1,24 @@
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Primitives\bin\Release\net6.0\SalePoint.Primitives.deps.json
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Primitives\bin\Release\net6.0\SalePoint.Primitives.dll
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Primitives\bin\Release\net6.0\SalePoint.Primitives.pdb
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\SalePoint.Primitives.csproj.AssemblyReference.cache
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\SalePoint.Primitives.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\SalePoint.Primitives.AssemblyInfoInputs.cache
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\SalePoint.Primitives.AssemblyInfo.cs
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\SalePoint.Primitives.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\SalePoint.Primitives.dll
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\refint\SalePoint.Primitives.dll
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\SalePoint.Primitives.pdb
+C:\Users\USER\OneDrive\Escritorio\Deploy\SalePointBackend\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\ref\SalePoint.Primitives.dll
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Primitives\bin\Release\net6.0\SalePoint.Primitives.deps.json
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Primitives\bin\Release\net6.0\SalePoint.Primitives.dll
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Primitives\bin\Release\net6.0\SalePoint.Primitives.pdb
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\SalePoint.Primitives.csproj.AssemblyReference.cache
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\SalePoint.Primitives.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\SalePoint.Primitives.AssemblyInfoInputs.cache
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\SalePoint.Primitives.AssemblyInfo.cs
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\SalePoint.Primitives.csproj.CoreCompileInputs.cache
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\SalePoint.Primitives.dll
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\refint\SalePoint.Primitives.dll
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\SalePoint.Primitives.pdb
+C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Primitives\obj\Release\net6.0\ref\SalePoint.Primitives.dll

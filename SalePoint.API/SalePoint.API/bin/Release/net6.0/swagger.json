@@ -1,0 +1,1007 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "SalePoint.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/CashRegister/Get/ByUserId/{userId}": {
+      "get": {
+        "tags": [
+          "CashRegister"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/CashRegister/Get/cashFlowsDetail/boxCutId/{boxCutId}/cashFlowsType/{cashFlowsType}": {
+      "get": {
+        "tags": [
+          "CashRegister"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "boxCutId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "cashFlowsType",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/CashRegister/Get/productReturnsDetail/boxCutId/{boxCutId}": {
+      "get": {
+        "tags": [
+          "CashRegister"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "boxCutId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/CashRegister/Open": {
+      "post": {
+        "tags": [
+          "CashRegister"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/InitialAmount"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/CashRegister/CashFlow": {
+      "post": {
+        "tags": [
+          "CashRegister"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CashFlows"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/CashRegister/Close": {
+      "put": {
+        "tags": [
+          "CashRegister"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CashRegister"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Department/Get": {
+      "get": {
+        "tags": [
+          "Department"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Product/Create": {
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Product"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Product/All": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Product/ExpiringSoon": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Product/NearCompletition": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Product/Get/productId/{productId}": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "productId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Product/GetBy/barCode/{barCode}": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "barCode",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Product/Update": {
+      "put": {
+        "tags": [
+          "Product"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Product"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Product/Update/{idProduct}/stock": {
+      "put": {
+        "tags": [
+          "Product"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "idProduct",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "format": "int32",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Product/Delete/id/{id}/userId/{userId}": {
+      "delete": {
+        "tags": [
+          "Product"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Rol/Get": {
+      "get": {
+        "tags": [
+          "Rol"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Sale/getSales/userId/{userId}": {
+      "post": {
+        "tags": [
+          "Sale"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "format": "date-time",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Sale": {
+      "post": {
+        "tags": [
+          "Sale"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/SellerItemsType"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Sale/reimbursement": {
+      "post": {
+        "tags": [
+          "Sale"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Reimbursement"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/User/Get": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/User/Get/ByUserId/{userId}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/User/Create": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PharmacyUser"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/User/Update": {
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PharmacyUser"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/User/Delete/ByUserId/{userId}": {
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/User/Login": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Access"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Access": {
+      "type": "object",
+      "properties": {
+        "userName": {
+          "type": "string"
+        },
+        "pass": {
+          "type": "string"
+        }
+      }
+    },
+    "BoxCloseReason": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "creationDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "modificationDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "deletionDate": {
+          "format": "date-time",
+          "type": "string"
+        }
+      }
+    },
+    "CashFlows": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "boxCutId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "cashFlowsTypesId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "quantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "createDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "deletionDate": {
+          "format": "date-time",
+          "type": "string"
+        }
+      }
+    },
+    "CashRegister": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "boxCloseReasonId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "initialAmount": {
+          "format": "double",
+          "type": "number"
+        },
+        "finalAmount": {
+          "format": "double",
+          "type": "number"
+        },
+        "gain": {
+          "format": "double",
+          "type": "number"
+        },
+        "cashIncome": {
+          "format": "double",
+          "type": "number"
+        },
+        "cashWithdrawal": {
+          "format": "double",
+          "type": "number"
+        },
+        "startDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "endDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "numberReimbursement": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pharmacyUser": {
+          "$ref": "#/definitions/PharmacyUser"
+        },
+        "boxCloseReason": {
+          "$ref": "#/definitions/BoxCloseReason"
+        }
+      }
+    },
+    "Department": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "creationDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "modificationDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "deletionDate": {
+          "format": "date-time",
+          "type": "string"
+        }
+      }
+    },
+    "InitialAmount": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "mount": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "PharmacyUser": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "age": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "address": {
+          "type": "string"
+        },
+        "cellPhone": {
+          "type": "string"
+        },
+        "avatar": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "creationDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "modificationDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "deletionDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "rolId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userName": {
+          "type": "string"
+        },
+        "pass": {
+          "type": "string"
+        },
+        "rol": {
+          "$ref": "#/definitions/Rol"
+        }
+      }
+    },
+    "Product": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "barCode": {
+          "type": "string"
+        },
+        "expirationDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "stock": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "minimumStock": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "purchasePrice": {
+          "format": "double",
+          "type": "number"
+        },
+        "sellingPrice": {
+          "format": "double",
+          "type": "number"
+        },
+        "revenue": {
+          "format": "double",
+          "type": "number"
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "creationDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "modificationDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "deletionDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "department": {
+          "$ref": "#/definitions/Department"
+        },
+        "productDepartment": {
+          "$ref": "#/definitions/ProductDepartment"
+        }
+      }
+    },
+    "ProductDepartment": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "productId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "departmentId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "Reimbursement": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "saleId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "boxCutId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "productId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "quantity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "total": {
+          "format": "double",
+          "type": "number"
+        },
+        "gain": {
+          "format": "double",
+          "type": "number"
+        },
+        "unitPrice": {
+          "format": "double",
+          "type": "number"
+        },
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "returnDate": {
+          "format": "date-time",
+          "type": "string"
+        }
+      }
+    },
+    "Rol": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "creationDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "modificationDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "deletionDate": {
+          "format": "date-time",
+          "type": "string"
+        }
+      }
+    },
+    "SellerItemsType": {
+      "type": "object",
+      "properties": {
+        "boxCutId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "productId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "quantity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "amount": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    }
+  }
+}
