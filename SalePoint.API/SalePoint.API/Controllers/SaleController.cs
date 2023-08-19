@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using SalePoint.Primitives;
 using SalePoint.Primitives.Interfaces;
 
 namespace SalePoint.API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class SaleController : Controller

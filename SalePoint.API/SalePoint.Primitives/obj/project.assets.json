@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {}
+    "C:\\Users\\hards\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Downloads\\Punto de venta v2.0\\App\\Back\\SalePoint.API\\SalePoint.Primitives\\SalePoint.Primitives.csproj",
+      "projectUniqueName": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.API\\SalePoint.Primitives\\SalePoint.Primitives.csproj",
       "projectName": "SalePoint.Primitives",
-      "projectPath": "C:\\Users\\USER\\Downloads\\Punto de venta v2.0\\App\\Back\\SalePoint.API\\SalePoint.Primitives\\SalePoint.Primitives.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Downloads\\Punto de venta v2.0\\App\\Back\\SalePoint.API\\SalePoint.Primitives\\obj\\",
+      "projectPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.API\\SalePoint.Primitives\\SalePoint.Primitives.csproj",
+      "packagesPath": "C:\\Users\\hards\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.API\\SalePoint.Primitives\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hards\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
