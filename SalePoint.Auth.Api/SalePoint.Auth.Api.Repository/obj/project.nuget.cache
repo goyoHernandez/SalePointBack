@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OKnzLb2qJlQC7l4XjBtQ+5Bk3wjUYyr+nvnf6T4sn3//H/a8r7fA6pFj2cpRDE3cacd3bOKE7rgkvPBktEWpCw==",
+  "dgSpecHash": "CjPFPvf85YP4D+fMGSrlq9DOHpK65wVacNRLZeGm6lih2RPwRcW8lK7tp1T3XfRy1Kvxkace5/s76g6DQJmhDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePoint.Auth.Service\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Repository\\SalePoint.Auth.Api.Repository.csproj",
+  "projectFilePath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Repository\\SalePoint.Auth.Api.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hards\\.nuget\\packages\\dapper\\2.0.151\\dapper.2.0.151.nupkg.sha512",
     "C:\\Users\\hards\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

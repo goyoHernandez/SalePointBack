@@ -223,3 +223,4 @@ C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.API
 C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.API\obj\Release\net6.0\SalePoint.API.pdb
 C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.API\obj\Release\net6.0\SalePoint.API.genruntimeconfig.cache
 C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.API\obj\Release\net6.0\ref\SalePoint.API.dll
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.API\bin\Release\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

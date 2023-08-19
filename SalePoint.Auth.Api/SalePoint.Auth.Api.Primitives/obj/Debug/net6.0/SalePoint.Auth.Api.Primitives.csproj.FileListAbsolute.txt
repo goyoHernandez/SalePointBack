@@ -9,3 +9,14 @@ C:\Users\hards\Downloads\Goyo\Projects\SalePoint.Auth.Service\SalePoint.Auth.Api
 C:\Users\hards\Downloads\Goyo\Projects\SalePoint.Auth.Service\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net6.0\refint\SalePoint.Auth.Api.Primitives.dll
 C:\Users\hards\Downloads\Goyo\Projects\SalePoint.Auth.Service\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net6.0\SalePoint.Auth.Api.Primitives.pdb
 C:\Users\hards\Downloads\Goyo\Projects\SalePoint.Auth.Service\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net6.0\ref\SalePoint.Auth.Api.Primitives.dll
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\bin\Debug\net6.0\SalePoint.Auth.Api.Primitives.deps.json
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\bin\Debug\net6.0\SalePoint.Auth.Api.Primitives.dll
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\bin\Debug\net6.0\SalePoint.Auth.Api.Primitives.pdb
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net6.0\SalePoint.Auth.Api.Primitives.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net6.0\SalePoint.Auth.Api.Primitives.AssemblyInfoInputs.cache
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net6.0\SalePoint.Auth.Api.Primitives.AssemblyInfo.cs
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net6.0\SalePoint.Auth.Api.Primitives.csproj.CoreCompileInputs.cache
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net6.0\SalePoint.Auth.Api.Primitives.dll
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net6.0\refint\SalePoint.Auth.Api.Primitives.dll
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net6.0\SalePoint.Auth.Api.Primitives.pdb
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net6.0\ref\SalePoint.Auth.Api.Primitives.dll

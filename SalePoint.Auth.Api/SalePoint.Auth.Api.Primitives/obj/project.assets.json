@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePoint.Auth.Service\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\SalePoint.Auth.Api.Primitives.csproj",
+      "projectUniqueName": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\SalePoint.Auth.Api.Primitives.csproj",
       "projectName": "SalePoint.Auth.Api.Primitives",
-      "projectPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePoint.Auth.Service\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\SalePoint.Auth.Api.Primitives.csproj",
+      "projectPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\SalePoint.Auth.Api.Primitives.csproj",
       "packagesPath": "C:\\Users\\hards\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePoint.Auth.Service\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\obj\\",
+      "outputPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hards\\AppData\\Roaming\\NuGet\\NuGet.Config",

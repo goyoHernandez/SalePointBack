@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KLVUHi3L+Ce3Iu+x6E4DxSNvLCVn4rlpIF5aFpjfAh+iOt1heJ6b07PNjyzHkiE6Ic15I5/GpThGxKnIkfg4NA==",
+  "dgSpecHash": "NYjROzT3qzOeGU+TMR3ybV0fxouDzcU/gRLSM4Vv7MQSpnOGWtk1zcK8W8MFtZtfWQOdlxxa+Es5lK/XzgmzTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePoint.Auth.Service\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Service\\SalePoint.Auth.Api.Service.csproj",
+  "projectFilePath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Service\\SalePoint.Auth.Api.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hards\\.nuget\\packages\\dapper\\2.0.151\\dapper.2.0.151.nupkg.sha512",
     "C:\\Users\\hards\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.21\\microsoft.aspnetcore.authentication.jwtbearer.6.0.21.nupkg.sha512",
