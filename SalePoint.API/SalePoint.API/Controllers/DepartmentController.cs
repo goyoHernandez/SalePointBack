@@ -4,7 +4,7 @@ using SalePoint.Primitives.Interfaces;
 
 namespace SalePoint.API.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [ApiController]
     [Route("[controller]")]
     public class DepartmentController : Controller
@@ -19,7 +19,14 @@ namespace SalePoint.API.Controllers
         [HttpGet("Get")]
         public async Task<ActionResult> GetAllDepartments()
         {
-            return Json(await _departmentRepository.GetAllDepartments());
+            try
+            {
+                return Json(await _departmentRepository.GetAllDepartments());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { isError = true, message = ex.Message });
+            }
         }
     }
 }

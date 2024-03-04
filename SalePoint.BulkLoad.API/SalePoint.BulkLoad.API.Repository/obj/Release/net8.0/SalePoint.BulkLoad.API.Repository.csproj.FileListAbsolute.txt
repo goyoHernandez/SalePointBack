@@ -1,0 +1,15 @@
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Repository\bin\Release\net8.0\SalePoint.BulkLoad.API.Repository.deps.json
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Repository\bin\Release\net8.0\SalePoint.BulkLoad.API.Repository.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Repository\bin\Release\net8.0\SalePoint.BulkLoad.API.Repository.pdb
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Repository\bin\Release\net8.0\SalePoint.BulkLoad.API.Primitives.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Repository\bin\Release\net8.0\SalePoint.BulkLoad.API.Primitives.pdb
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Repository\obj\Release\net8.0\SalePoint.BulkLoad.API.Repository.csproj.AssemblyReference.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Repository\obj\Release\net8.0\SalePoint.BulkLoad.API.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Repository\obj\Release\net8.0\SalePoint.BulkLoad.API.Repository.AssemblyInfoInputs.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Repository\obj\Release\net8.0\SalePoint.BulkLoad.API.Repository.AssemblyInfo.cs
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Repository\obj\Release\net8.0\SalePoint.BulkLoad.API.Repository.csproj.CoreCompileInputs.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Repository\obj\Release\net8.0\SalePoint.BulkLoad.API.Repository.csproj.CopyComplete
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Repository\obj\Release\net8.0\SalePoint.BulkLoad.API.Repository.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Repository\obj\Release\net8.0\refint\SalePoint.BulkLoad.API.Repository.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Repository\obj\Release\net8.0\SalePoint.BulkLoad.API.Repository.pdb
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Repository\obj\Release\net8.0\ref\SalePoint.BulkLoad.API.Repository.dll

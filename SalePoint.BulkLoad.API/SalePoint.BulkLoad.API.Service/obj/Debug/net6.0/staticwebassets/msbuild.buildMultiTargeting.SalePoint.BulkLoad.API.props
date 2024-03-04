@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SalePoint.BulkLoad.API.props" />
+</Project>

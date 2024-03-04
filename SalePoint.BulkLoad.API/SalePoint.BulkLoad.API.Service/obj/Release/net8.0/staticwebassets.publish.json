@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jVVzSY2zrp/68vrOhMB+gdE/jIe6LHMVTSIc49UJwN0=",
+  "Source": "SalePoint.BulkLoad.API.Service",
+  "BasePath": "_content/SalePoint.BulkLoad.API.Service",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

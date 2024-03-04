@@ -4,7 +4,20 @@ using SalePoint.Auth.Api.Primitives.Interfaces;
 using SalePoint.Auth.Api.Repository;
 using System.Text;
 
+
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:3000");
+            policy.WithMethods("GET", "POST", "PUT", "DELETE");
+            policy.WithHeaders("*");
+        });
+});
 
 // Add services to the container.
 
@@ -22,7 +35,7 @@ builder.Services.AddAuthentication(
     }).
    AddJwtBearer(o =>
    {
-       var key = Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]);
+       var key = Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]!);
        o.SaveToken = true;
        o.TokenValidationParameters = new TokenValidationParameters
        {
@@ -39,13 +52,16 @@ builder.Services.AddAuthentication(
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+//if (app.Environment.IsDevelopment())
+//{
+//    app.UseSwagger();
+//    app.UseSwaggerUI();
+//}
 
+app.UseSwagger();
+app.UseSwaggerUI();
 app.UseHttpsRedirection();
+app.UseCors(MyAllowSpecificOrigins);
 app.UseAuthentication();
 app.UseAuthorization();
 

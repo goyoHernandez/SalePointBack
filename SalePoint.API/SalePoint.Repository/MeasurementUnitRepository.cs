@@ -7,14 +7,9 @@ using System.Data;
 
 namespace SalePoint.Repository
 {
-    public class MeasurementUnitRepository : IMeasurementUnitRepository
+    public class MeasurementUnitRepository(IConfiguration configuration) : IMeasurementUnitRepository
     {
-        private readonly IConfiguration _configuration;
-
-        public MeasurementUnitRepository(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+        private readonly IConfiguration _configuration = configuration;
 
         public async Task<IEnumerable<MeasurementUnit>> GetMeasurementUnit()
         {
@@ -34,7 +29,7 @@ namespace SalePoint.Repository
 	                                  FROM MeasurementUnit MU
 	                                  WHERE MU.IsActive = 1";
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
 
                 measurementUnits = await conn.QueryAsync<MeasurementUnit>(query);

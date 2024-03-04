@@ -1,5 +1,4 @@
-﻿#nullable disable
-namespace SalePoint.Primitives
+﻿namespace SalePoint.Primitives
 {
     public record Sale
     {
@@ -9,9 +8,9 @@ namespace SalePoint.Primitives
 
         public int ProductId { get; set; }
 
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
-        public string Description { get; set; }
+        public string Description { get; set; } = string.Empty;
 
         public decimal Quantity { get; set; }
         
@@ -39,7 +38,7 @@ namespace SalePoint.Primitives
 
         public int UserId { get; set; }
 
-        public string User { get; set; }
+        public string User { get; set; } = string.Empty;
 
         public string? UserAppliesReturn { get; set; }
 

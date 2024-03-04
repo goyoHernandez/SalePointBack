@@ -7,21 +7,15 @@ using System.Data;
 
 namespace SalePoint.Repository
 {
-    public class DepartmentRepository : IDepartmentRepository
+    public class DepartmentRepository(IConfiguration configuration) : IDepartmentRepository
     {
-        private readonly IConfiguration _configuration;
-        public DepartmentRepository(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+        private readonly IConfiguration _configuration = configuration;
 
         public async Task<IEnumerable<Department>> GetAllDepartments()
         {
-            try
-            {
-                IEnumerable<Department> departments;
+            IEnumerable<Department> departments;
 
-                string query = @"
+            string query = @"
                                   SELECT 
 	                                     D.[Id] 'Id',
                                          D.[Name] 'Name',
@@ -32,19 +26,14 @@ namespace SalePoint.Repository
 	                                  FROM Department D
 	                                  WHERE D.IsActive = 1";
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
-                conn.Open();
+            using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
+            conn.Open();
 
-                departments = await conn.QueryAsync<Department>(query);
+            departments = await conn.QueryAsync<Department>(query);
 
-                conn.Close();
+            conn.Close();
 
-                return departments;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+            return departments;
         }
     }
 }

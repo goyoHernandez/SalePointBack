@@ -3,7 +3,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using SalePoint.Auth.Api.Primitives.Interfaces;
 using SalePoint.Auth.Api.Primitives.Models;
-using System.Data;
 using System.Data.SqlClient;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -11,14 +10,9 @@ using System.Text;
 
 namespace SalePoint.Auth.Api.Repository
 {
-    public class JwtManagerRepository : IJwtManagerRepository
+    public class JwtManagerRepository(IConfiguration configuration) : IJwtManagerRepository
     {
-        private readonly IConfiguration _configuration;
-
-        public JwtManagerRepository(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+        private readonly IConfiguration _configuration = configuration;
 
         public async Task<TokenAuth?> Authenticate(Access access)
         {
@@ -54,7 +48,7 @@ namespace SalePoint.Auth.Api.Repository
 		                                AND PU.Pass = @pass
 		                                AND PU.IsActive = 1";
 
-            using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+            using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
             conn.Open();
             storeUser = (await conn.QueryAsync<StoreUser, Rol, StoreUser?>(query,
                  map: (pu, r) =>
@@ -83,11 +77,11 @@ namespace SalePoint.Auth.Api.Repository
                 Subject = new ClaimsIdentity(
                     new Claim[]
                     {
-                        new Claim(ClaimTypes.Sid, storeUser.Id.ToString()),
-                        new Claim(ClaimTypes.Name, storeUser.Name),
-                        new Claim(ClaimTypes.Role, storeUser.Rol.Name)
+                        new(ClaimTypes.Sid, storeUser.Id.ToString()),
+                        new(ClaimTypes.Name, storeUser.Name),
+                        new(ClaimTypes.Role, storeUser.Rol.Name)
                     }),
-                Expires = DateTime.UtcNow.AddMinutes(60),
+                Expires = DateTime.Now.AddDays(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(tokenKey), SecurityAlgorithms.HmacSha256Signature)
             };
 

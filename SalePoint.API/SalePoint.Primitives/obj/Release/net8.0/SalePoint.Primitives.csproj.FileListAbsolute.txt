@@ -1,0 +1,11 @@
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Primitives\bin\Release\net8.0\SalePoint.Primitives.deps.json
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Primitives\bin\Release\net8.0\SalePoint.Primitives.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Primitives\bin\Release\net8.0\SalePoint.Primitives.pdb
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Primitives\obj\Release\net8.0\SalePoint.Primitives.GeneratedMSBuildEditorConfig.editorconfig
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Primitives\obj\Release\net8.0\SalePoint.Primitives.AssemblyInfoInputs.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Primitives\obj\Release\net8.0\SalePoint.Primitives.AssemblyInfo.cs
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Primitives\obj\Release\net8.0\SalePoint.Primitives.csproj.CoreCompileInputs.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Primitives\obj\Release\net8.0\SalePoint.Primitives.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Primitives\obj\Release\net8.0\refint\SalePoint.Primitives.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Primitives\obj\Release\net8.0\SalePoint.Primitives.pdb
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Primitives\obj\Release\net8.0\ref\SalePoint.Primitives.dll

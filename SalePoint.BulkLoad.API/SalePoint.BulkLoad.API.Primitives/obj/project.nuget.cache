@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "16DpP8Q00cgRUpmsGNOrr+BqVvTKpGbKSq2hSyFg4bXZXijI/hB7hKlYtIogsyjR28vi+suJ3JegjJmsRC72aw==",
+  "success": true,
+  "projectFilePath": "C:\\SalePoint\\app-sale-point-v1.1\\SalePointBack\\SalePoint.BulkLoad.API\\SalePoint.BulkLoad.API.Primitives\\SalePoint.BulkLoad.API.Primitives.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

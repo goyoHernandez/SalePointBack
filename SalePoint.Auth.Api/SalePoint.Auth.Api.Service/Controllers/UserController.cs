@@ -9,26 +9,28 @@ namespace SalePoint.Auth.Api.Service.Controllers
     [Authorize]
     [Route("[controller]")]
     [ApiController]    
-    public class UserController : Controller
+    public class UserController(IJwtManagerRepository jwtManagerRepository) : Controller
     {
-        private readonly IJwtManagerRepository _jwtManagerRepository;
-
-        public UserController(IJwtManagerRepository jwtManagerRepository)
-        {
-            _jwtManagerRepository = jwtManagerRepository ?? throw new ArgumentNullException(nameof(jwtManagerRepository));
-        }
+        private readonly IJwtManagerRepository _jwtManagerRepository = jwtManagerRepository ?? throw new ArgumentNullException(nameof(jwtManagerRepository));
 
         [HttpPost]
         [AllowAnonymous]
         [Route("login")]
         public async Task<IActionResult> Authenticate(Access access)
         {
-            TokenAuth? token = await _jwtManagerRepository.Authenticate(access);
+            try
+            {
+                TokenAuth? token = await _jwtManagerRepository.Authenticate(access);
 
-            if (token is null)
-                return Unauthorized();
+                if (token is null)
+                    return Unauthorized();
 
-            return Ok(token);
+                return Ok(token);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { isError = true, message = ex.Message });
+            }
         }
     }
 }

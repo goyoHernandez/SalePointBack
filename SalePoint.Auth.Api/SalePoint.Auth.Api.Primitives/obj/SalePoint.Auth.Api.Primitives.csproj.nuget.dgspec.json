@@ -1,32 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\SalePoint.Auth.Api.Primitives.csproj": {}
+    "C:\\SalePoint\\app-sale-point-v1.1\\SalePointBack\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\SalePoint.Auth.Api.Primitives.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\SalePoint.Auth.Api.Primitives.csproj": {
+    "C:\\SalePoint\\app-sale-point-v1.1\\SalePointBack\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\SalePoint.Auth.Api.Primitives.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\SalePoint.Auth.Api.Primitives.csproj",
+        "projectUniqueName": "C:\\SalePoint\\app-sale-point-v1.1\\SalePointBack\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\SalePoint.Auth.Api.Primitives.csproj",
         "projectName": "SalePoint.Auth.Api.Primitives",
-        "projectPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\SalePoint.Auth.Api.Primitives.csproj",
-        "packagesPath": "C:\\Users\\hards\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\obj\\",
+        "projectPath": "C:\\SalePoint\\app-sale-point-v1.1\\SalePointBack\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\SalePoint.Auth.Api.Primitives.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\SalePoint\\app-sale-point-v1.1\\SalePointBack\\SalePoint.Auth.Api\\SalePoint.Auth.Api.Primitives\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hards\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/brive/Yooin_Empresas/_packaging/Brive_Artifacts/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +43,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -55,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\SalePoint.BulkLoad.API.Service.props" />
+</Project>

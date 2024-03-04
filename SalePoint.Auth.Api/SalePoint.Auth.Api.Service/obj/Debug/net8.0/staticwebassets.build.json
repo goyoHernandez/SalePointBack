@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zXlrcaGP5XtWh0k7ZLgYRjFTbUoGOun9bdYZk4GeR5k=",
+  "Source": "SalePoint.Auth.Api.Service",
+  "BasePath": "_content/SalePoint.Auth.Api.Service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

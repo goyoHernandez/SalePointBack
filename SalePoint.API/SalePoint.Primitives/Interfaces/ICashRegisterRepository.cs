@@ -14,6 +14,6 @@
 
         Task<int> ApplyCashFlows(CashFlows cashFlows);
 
-        Task<BoxCutOpen> ValidateBoxCutOpen(int userId, decimal change);
+        Task<BoxCutOpen?> ValidateBoxCutOpen(int userId, decimal change);
     }
 }

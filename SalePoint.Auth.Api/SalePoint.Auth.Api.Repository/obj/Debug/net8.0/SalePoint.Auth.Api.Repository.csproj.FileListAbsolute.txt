@@ -1,0 +1,15 @@
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Repository\bin\Debug\net8.0\SalePoint.Auth.Api.Repository.deps.json
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Repository\bin\Debug\net8.0\SalePoint.Auth.Api.Repository.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Repository\bin\Debug\net8.0\SalePoint.Auth.Api.Repository.pdb
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Repository\bin\Debug\net8.0\SalePoint.Auth.Api.Primitives.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Repository\bin\Debug\net8.0\SalePoint.Auth.Api.Primitives.pdb
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Repository\obj\Debug\net8.0\SalePoint.Auth.Api.Repository.csproj.AssemblyReference.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Repository\obj\Debug\net8.0\SalePoint.Auth.Api.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Repository\obj\Debug\net8.0\SalePoint.Auth.Api.Repository.AssemblyInfoInputs.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Repository\obj\Debug\net8.0\SalePoint.Auth.Api.Repository.AssemblyInfo.cs
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Repository\obj\Debug\net8.0\SalePoint.Auth.Api.Repository.csproj.CoreCompileInputs.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Repository\obj\Debug\net8.0\SalePoint.Auth.Api.Repository.csproj.CopyComplete
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Repository\obj\Debug\net8.0\SalePoint.Auth.Api.Repository.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Repository\obj\Debug\net8.0\refint\SalePoint.Auth.Api.Repository.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Repository\obj\Debug\net8.0\SalePoint.Auth.Api.Repository.pdb
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Repository\obj\Debug\net8.0\ref\SalePoint.Auth.Api.Repository.dll

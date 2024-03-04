@@ -1,0 +1,221 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API\\SalePoint.BulkLoad.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API.Primitives\\SalePoint.BulkLoad.API.Primitives.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API.Primitives\\SalePoint.BulkLoad.API.Primitives.csproj",
+        "projectName": "SalePoint.BulkLoad.API.Primitives",
+        "projectPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API.Primitives\\SalePoint.BulkLoad.API.Primitives.csproj",
+        "packagesPath": "C:\\Users\\hards\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API.Primitives\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hards\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API.Repository\\SalePoint.BulkLoad.API.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API.Repository\\SalePoint.BulkLoad.API.Repository.csproj",
+        "projectName": "SalePoint.BulkLoad.API.Repository",
+        "projectPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API.Repository\\SalePoint.BulkLoad.API.Repository.csproj",
+        "packagesPath": "C:\\Users\\hards\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hards\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API.Primitives\\SalePoint.BulkLoad.API.Primitives.csproj": {
+                "projectPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API.Primitives\\SalePoint.BulkLoad.API.Primitives.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[30.0.1, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.28, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.4, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API\\SalePoint.BulkLoad.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API\\SalePoint.BulkLoad.API.csproj",
+        "projectName": "SalePoint.BulkLoad.API",
+        "projectPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API\\SalePoint.BulkLoad.API.csproj",
+        "packagesPath": "C:\\Users\\hards\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hards\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API.Primitives\\SalePoint.BulkLoad.API.Primitives.csproj": {
+                "projectPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API.Primitives\\SalePoint.BulkLoad.API.Primitives.csproj"
+              },
+              "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API.Repository\\SalePoint.BulkLoad.API.Repository.csproj": {
+                "projectPath": "C:\\Users\\hards\\Downloads\\Goyo\\Projects\\SalePointBack\\SalePoint.BulkLoad.API.Service\\SalePoint.BulkLoad.API.Repository\\SalePoint.BulkLoad.API.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
