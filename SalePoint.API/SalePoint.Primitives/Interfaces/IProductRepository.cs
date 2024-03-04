@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SalePoint.Primitives.Interfaces
+﻿namespace SalePoint.Primitives.Interfaces
 {
     public interface IProductRepository
     {
         Task<int> CreateProduct(Product product);
 
-        Task<IEnumerable<ProductModel>> GetAllProducts();
+        Task<ProductModel> GetAllProducts(int pageNumber, int pageSize);
 
         Task<IEnumerable<Product>> GetProductsExpiringSoon();
         
@@ -20,7 +14,9 @@ namespace SalePoint.Primitives.Interfaces
 
         Task<IEnumerable<Product>> GetProductByBarCode(string barCode);
 
-        Task<IEnumerable<ProductModel>> GetProductByNameOrDescription(string keyWord);
+        Task<ProductModel> GetProductByNameOrDescriptionPaginate(string keyWord, int pageNumber, int pageSize);
+
+        Task<ProductModel> GetProductByNameOrDescription(string keyWord);
 
         Task<int> UpdateProduct(Product product);
 

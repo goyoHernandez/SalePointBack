@@ -10,25 +10,21 @@ using static Dapper.SqlMapper;
 
 namespace SalePoint.Repository
 {
-    public class SaleRepository : ISaleRepository
+    public class SaleRepository(IConfiguration configuration) : ISaleRepository
     {
-        private readonly IConfiguration _configuration;
-        public SaleRepository(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+        private readonly IConfiguration _configuration = configuration;
 
         public async Task<List<Sale>> GetSalesByUserId(FilterSaleProducts filterSaleProducts)
         {
             try
             {
-                List<Sale> sales = new();
+                List<Sale> sales = [];
                 DynamicParameters parameters = new();
                 parameters.Add("userId", filterSaleProducts.UserId);
                 parameters.Add("saleDateStart", filterSaleProducts.SaleDateStart);
                 parameters.Add("saleDateEnd", filterSaleProducts.SaleDateEnd);
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 sales = (await conn.QueryAsync<Sale>("ShowSalesByUserId", param: parameters, commandType: CommandType.StoredProcedure)).ToList();
                 conn.Close();
@@ -62,7 +58,7 @@ namespace SalePoint.Repository
                 //parameters.Add("UnitMeasureId", productReturns.UnitMeasureId);
                 //parameters.Add("ReturnDate", productReturns.ReturnDate);
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 idProductReturn = await conn.QueryFirstAsync<int>("ReturnProduct", param: parameters, commandType: CommandType.StoredProcedure);
                 conn.Close();
@@ -120,7 +116,7 @@ namespace SalePoint.Repository
                     sellerItemsType = sellerItemsDT.AsTableValuedParameter("[dbo].[SellerItemsType]")
                 };
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
 
                 // execute Stored Procedure

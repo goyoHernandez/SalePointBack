@@ -3,22 +3,13 @@ using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using SalePoint.Primitives;
 using SalePoint.Primitives.Interfaces;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SalePoint.Repository
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository(IConfiguration configuration) : IUserRepository
     {
-        private readonly IConfiguration _configuration;
-        public UserRepository(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+        private readonly IConfiguration _configuration = configuration;
 
         public async Task<int> CreateUser(StoreUser storeUser)
         {
@@ -36,16 +27,16 @@ namespace SalePoint.Repository
                 parameters.Add("userName", storeUser.UserName);
                 parameters.Add("pass", storeUser.Pass);
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 int userId = await conn.QuerySingleOrDefaultAsync<int>("CreateStoreUser", parameters, commandType: CommandType.StoredProcedure);
                 conn.Close();
 
                 return userId;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw new Exception(ex.Message);
             }
         }
 
@@ -83,7 +74,7 @@ namespace SalePoint.Repository
 		                                INNER JOIN Rol R ON PU.RolId = R.Id
 		                                WHERE PU.IsActive = 1";
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 storeUser = (await conn.QueryAsync<StoreUser, Rol, StoreUser>(query,
                      map: (pu, r) =>
@@ -96,9 +87,9 @@ namespace SalePoint.Repository
                 conn.Close();
                 return storeUser;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw new Exception(ex.Message);
             }
         }
 
@@ -137,7 +128,7 @@ namespace SalePoint.Repository
 		                                WHERE PU.Id = @userId
 		                                AND PU.IsActive = 1";
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 storeUser = (await conn.QueryAsync<StoreUser, Rol, StoreUser?>(query,
                      map: (pu, r) =>
@@ -151,9 +142,9 @@ namespace SalePoint.Repository
                 conn.Close();
                 return storeUser;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw new Exception(ex.Message);
             }
         }
 
@@ -193,7 +184,7 @@ namespace SalePoint.Repository
 		                                AND PU.Pass = @pass
 		                                AND PU.IsActive = 1";
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 storeUser = (await conn.QueryAsync<StoreUser, Rol, StoreUser?>(query,
                      map: (pu, r) =>
@@ -209,7 +200,7 @@ namespace SalePoint.Repository
             }
             catch (Exception ex)
             {
-                throw;
+                throw new Exception(ex.Message);
             }
         }
 
@@ -230,16 +221,16 @@ namespace SalePoint.Repository
                 parameters.Add("userName", storeUser.UserName);
                 parameters.Add("pass", storeUser.Pass);
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 int userId = await conn.QuerySingleOrDefaultAsync<int>("UpdateStoreUser", parameters, commandType: CommandType.StoredProcedure);
                 conn.Close();
 
                 return userId;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw new Exception(ex.Message);
             }
         }
 
@@ -250,16 +241,16 @@ namespace SalePoint.Repository
                 DynamicParameters parameters = new();
                 parameters.Add("userId", userId);
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 int id = await conn.QuerySingleOrDefaultAsync<int>("DeleteStoreUser", parameters, commandType: CommandType.StoredProcedure);
                 conn.Close();
 
                 return id;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw new Exception(ex.Message);
             }
         }
     }

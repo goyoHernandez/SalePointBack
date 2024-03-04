@@ -1,78 +1,167 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SalePoint.Primitives;
 using SalePoint.Primitives.Interfaces;
 
 namespace SalePoint.API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
-    public class ProductController : Controller
+    public class ProductController(IProductRepository productRepository) : Controller
     {
-        private IProductRepository _productRepository;
-
-        public ProductController(IProductRepository productRepository)
-        {
-            _productRepository = productRepository ?? throw new ArgumentNullException(nameof(productRepository));
-        }
+        private readonly IProductRepository _productRepository = productRepository ?? throw new ArgumentNullException(nameof(productRepository));
 
         [HttpPost("Create")]
         public async Task<ActionResult> CreateProduct(Product product)
         {
-            return Json(await _productRepository.CreateProduct(product));
+            try
+            {
+                return Json(await _productRepository.CreateProduct(product));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { isError = true, message = ex.Message });
+            }
         }
 
-        [HttpGet("All")]
-        public async Task<ActionResult> GetAllProducts()
+        [HttpGet("All/pageNumber/{pageNumber}/pageSize/{pageSize}")]
+        public async Task<ActionResult> GetAllProducts(int pageNumber, int pageSize)
         {
-            return Json(await _productRepository.GetAllProducts());
+            try
+            {
+                return Json(await _productRepository.GetAllProducts(pageNumber, pageSize));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { isError = true, message = ex.Message });
+            }
         }
-        
+
         [HttpGet("ExpiringSoon")]
         public async Task<ActionResult> GetExpiringSoonProducts()
         {
-            return Json(await _productRepository.GetProductsExpiringSoon());
+            try
+            {
+                return Json(await _productRepository.GetProductsExpiringSoon());
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { isError = true, message = ex.Message });
+            }
         }
-        
+
         [HttpGet("NearCompletition")]
         public async Task<ActionResult> GetProductsNearCompletition()
         {
-            return Json(await _productRepository.GetProductsNearCompletition());
+            try
+            {
+                return Json(await _productRepository.GetProductsNearCompletition());
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { isError = true, message = ex.Message });
+            }
         }
 
         [HttpGet("Get/productId/{productId}")]
         public async Task<ActionResult> GetProductById(int productId)
         {
-            return Json(await _productRepository.GetProductById(productId));
+            try
+            {
+                return Json(await _productRepository.GetProductById(productId));
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { isError = true, message = ex.Message });
+            }
         }
 
         [HttpGet("GetBy/barCode/{barCode}")]
         public async Task<ActionResult> GetProductByBarCode(string barCode)
         {
-            return Json(await _productRepository.GetProductByBarCode(barCode));
+            try
+            {
+                return Json(await _productRepository.GetProductByBarCode(barCode));
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { isError = true, message = ex.Message });
+            }
+        }
+
+        [HttpGet("GetBy/NameOrDescription/{keyWord}/pageNumber/{pageNumber}/pageSize/{pageSize}")]
+        public async Task<ActionResult> GetProductByNameOrDescriptionPaginate(string keyWord, int pageNumber, int pageSize)
+        {
+            try
+            {
+                return Json(await _productRepository.GetProductByNameOrDescriptionPaginate(keyWord, pageNumber, pageSize));
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { isError = true, message = ex.Message });
+            }
         }
 
         [HttpGet("GetBy/NameOrDescription/{keyWord}")]
         public async Task<ActionResult> GetProductByNameOrDescription(string keyWord)
         {
-            return Json(await _productRepository.GetProductByNameOrDescription(keyWord));
+            try
+            {
+                return Json(await _productRepository.GetProductByNameOrDescription(keyWord));
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { isError = true, message = ex.Message });
+            }
         }
 
         [HttpPut("Update")]
         public async Task<ActionResult> UpdateProduct(Product product)
         {
-            return Json(await _productRepository.UpdateProduct(product));
+            try
+            {
+                return Json(await _productRepository.UpdateProduct(product));
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { isError = true, message = ex.Message });
+            }
         }
 
         [HttpPut("Update/{idProduct}/stock")]
-        public async Task<ActionResult> UpdateStockProduct(int idProduct, [FromBody]int stock)
+        public async Task<ActionResult> UpdateStockProduct(int idProduct, [FromBody] int stock)
         {
-            return Json(await _productRepository.UpdateStockProduct(idProduct, stock));
+            try
+            {
+                return Json(await _productRepository.UpdateStockProduct(idProduct, stock));
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { isError = true, message = ex.Message });
+            }
         }
 
         [HttpDelete("Delete/id/{id}/userId/{userId}")]
         public async Task<ActionResult> DeleteProduct(int id, int userId)
         {
-            return Json(await _productRepository.DeleteProduct(id, userId));
+            try
+            {
+                return Json(await _productRepository.DeleteProduct(id, userId));
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { isError = true, message = ex.Message });
+            }
         }
     }
 }

@@ -1,0 +1,11 @@
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\bin\Debug\net8.0\SalePoint.Auth.Api.Primitives.deps.json
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\bin\Debug\net8.0\SalePoint.Auth.Api.Primitives.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\bin\Debug\net8.0\SalePoint.Auth.Api.Primitives.pdb
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net8.0\SalePoint.Auth.Api.Primitives.GeneratedMSBuildEditorConfig.editorconfig
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net8.0\SalePoint.Auth.Api.Primitives.AssemblyInfoInputs.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net8.0\SalePoint.Auth.Api.Primitives.AssemblyInfo.cs
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net8.0\SalePoint.Auth.Api.Primitives.csproj.CoreCompileInputs.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net8.0\SalePoint.Auth.Api.Primitives.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net8.0\refint\SalePoint.Auth.Api.Primitives.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net8.0\SalePoint.Auth.Api.Primitives.pdb
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.Auth.Api\SalePoint.Auth.Api.Primitives\obj\Debug\net8.0\ref\SalePoint.Auth.Api.Primitives.dll

@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SalePoint.Primitives;
 using SalePoint.Primitives.Interfaces;
 using SalePoint.Repository;
 
 namespace SalePoint.API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class RolController : Controller

@@ -28,3 +28,33 @@ C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Rep
 C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\refint\SalePoint.Repository.dll
 C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.pdb
 C:\Users\USER\Downloads\Punto de venta v2.0\App\Back\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\ref\SalePoint.Repository.dll
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.Repository\bin\Release\net6.0\SalePoint.Repository.deps.json
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.Repository\bin\Release\net6.0\SalePoint.Repository.dll
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.Repository\bin\Release\net6.0\SalePoint.Repository.pdb
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.Repository\bin\Release\net6.0\SalePoint.Primitives.dll
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.Repository\bin\Release\net6.0\SalePoint.Primitives.pdb
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.csproj.AssemblyReference.cache
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.AssemblyInfoInputs.cache
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.AssemblyInfo.cs
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.csproj.CoreCompileInputs.cache
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.csproj.CopyComplete
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.dll
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\refint\SalePoint.Repository.dll
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.pdb
+C:\Users\hards\Downloads\Goyo\Projects\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\ref\SalePoint.Repository.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Repository\bin\Release\net6.0\SalePoint.Repository.deps.json
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Repository\bin\Release\net6.0\SalePoint.Repository.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Repository\bin\Release\net6.0\SalePoint.Repository.pdb
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Repository\bin\Release\net6.0\SalePoint.Primitives.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Repository\bin\Release\net6.0\SalePoint.Primitives.pdb
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.csproj.AssemblyReference.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.AssemblyInfoInputs.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.AssemblyInfo.cs
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.csproj.CoreCompileInputs.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.csproj.CopyComplete
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\refint\SalePoint.Repository.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\SalePoint.Repository.pdb
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.API\SalePoint.Repository\obj\Release\net6.0\ref\SalePoint.Repository.dll

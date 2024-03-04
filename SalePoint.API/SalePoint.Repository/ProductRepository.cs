@@ -8,13 +8,9 @@ using System.Data;
 
 namespace SalePoint.Repository
 {
-    public class ProductRepository : IProductRepository
+    public class ProductRepository(IConfiguration configuration) : IProductRepository
     {
-        private readonly IConfiguration _configuration;
-        public ProductRepository(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+        private readonly IConfiguration _configuration = configuration;
 
         public async Task<int> CreateProduct(Product product)
         {
@@ -56,7 +52,7 @@ namespace SalePoint.Repository
 
                 dynamicParameters.Add("priceProductType", priceProductDT.AsTableValuedParameter("[dbo].[PriceProductType]"));
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 int productId = await conn.QuerySingleOrDefaultAsync<int>("CreateProduct", dynamicParameters, commandType: CommandType.StoredProcedure);
                 conn.Dispose();
@@ -69,16 +65,29 @@ namespace SalePoint.Repository
             }
         }
 
-        public async Task<IEnumerable<ProductModel>> GetAllProducts()
+        public async Task<ProductModel> GetAllProducts(int pageNumber, int pageSize)
         {
             try
             {
-                IEnumerable<ProductModel> products;
+                ProductModel products = new();
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                DynamicParameters parameters = new();
+                parameters.Add("pageSize", pageSize);
+                parameters.Add("pageNumber", pageNumber);
+
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
 
-                products = await conn.QueryAsync<ProductModel>("GetAllProducts", commandType: CommandType.StoredProcedure);
+                products.Products = await conn.QueryAsync<ResponseProduct>("GetAllProducts", param: parameters, commandType: CommandType.StoredProcedure);
+
+                string query = @"SELECT 
+                                        CEILING(CAST(COUNT(Id) AS DECIMAL(10,2)) / @pageSize) AS TotalPage
+                                        FROM Product
+                                        WHERE ISActive = 1";
+
+                products.Filters.TotalPage = conn.QueryFirstOrDefault<int>(query, new { PageSize = pageSize });
+                products.Filters.PageSize = pageSize;
+                products.Filters.PageNumber = pageNumber;
                 conn.Dispose();
 
                 return products;
@@ -128,7 +137,7 @@ namespace SalePoint.Repository
 		                                WHERE P.IsActive = 1
 		                                AND (DATEDIFF(DAY, GETDATE(), P.ExpirationDate) < 100  AND DATEDIFF(DAY, GETDATE(), P.ExpirationDate)  >= 0)";
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
 
                 products = await conn.QueryAsync<Product, ProductDepartment, Department, MeasurementUnit, Product>(query,
@@ -191,7 +200,7 @@ namespace SalePoint.Repository
 		                                WHERE P.IsActive = 1
 	                                    AND Stock <= MinimumStock;";
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
 
                 products = await conn.QueryAsync<Product, ProductDepartment, Department, MeasurementUnit, Product>(query,
@@ -219,7 +228,7 @@ namespace SalePoint.Repository
             {
                 Product product;
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
 
                 IEnumerable<Product> products = await conn.QueryAsync<Product, PriceProduct, ProductDepartment, Department, MeasurementUnit, Product>("GetProductById",
@@ -258,7 +267,7 @@ namespace SalePoint.Repository
             {
                 IEnumerable<Product> products;
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
 
                 products = await conn.QueryAsync<Product, PriceProduct, ProductDepartment, Department, MeasurementUnit, Product>("GetProductByBarCode",
@@ -291,20 +300,48 @@ namespace SalePoint.Repository
             }
         }
 
-        public async Task<IEnumerable<ProductModel>> GetProductByNameOrDescription(string keyWord)
+        public async Task<ProductModel> GetProductByNameOrDescriptionPaginate(string keyWord, int pageNumber, int pageSize)
         {
             try
             {
-                IEnumerable<ProductModel> products;
+                ProductModel productModel = new();
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
 
-                products = await conn.QueryAsync<ProductModel>("GetProductByNameOrDescription", param: new { keyWord }, commandType: CommandType.StoredProcedure);
+                productModel.Products = await conn.QueryAsync<ResponseProduct>("GetProductByNameOrDescriptionPaginate", param: new { keyWord, pageNumber, pageSize }, commandType: CommandType.StoredProcedure);
 
+                string query = @"SELECT 
+                                        CEILING(CAST(COUNT(Id) AS DECIMAL(10,2)) / @pageSize) AS TotalPage
+                                        FROM Product P
+                                        WHERE (P.[Name] LIKE '%' + @keyWord + '%' OR P.[Description] LIKE '%' + @keyWord + '%') AND P.IsActive = 1 ";
+
+                productModel.Filters.TotalPage = conn.QueryFirstOrDefault<int>(query, new { keyWord, pageSize });
+                productModel.Filters.PageSize = pageSize;
+                productModel.Filters.PageNumber = pageNumber;
                 conn.Dispose();
 
-                return products;
+                return productModel;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public async Task<ProductModel> GetProductByNameOrDescription(string keyWord)
+        {
+            try
+            {
+                ProductModel productModel = new();
+
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
+                conn.Open();
+
+                productModel.Products = await conn.QueryAsync<ResponseProduct>("GetProductByNameOrDescription", param: new { keyWord}, commandType: CommandType.StoredProcedure);
+                conn.Dispose();
+
+                return productModel;
             }
             catch (Exception)
             {
@@ -353,7 +390,7 @@ namespace SalePoint.Repository
 
                 dynamicParameters.Add("priceProductType", priceProductDT.AsTableValuedParameter("[dbo].[PriceProductType]"));
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 int productId = await conn.QuerySingleOrDefaultAsync<int>("UpdateProduct", dynamicParameters, commandType: CommandType.StoredProcedure);
                 conn.Dispose();
@@ -375,7 +412,7 @@ namespace SalePoint.Repository
                 parameters.Add("idProduct", idProduct);
                 parameters.Add("stock", stock);
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 productId = await conn.QueryFirstAsync<int>("UpdateStockProduct", param: parameters, commandType: CommandType.StoredProcedure);
                 conn.Dispose();
@@ -396,7 +433,7 @@ namespace SalePoint.Repository
                 parameters.Add("Id", id);
                 parameters.Add("UserId", userId);
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 int productId = await conn.QuerySingleOrDefaultAsync<int>("DeleteProduct", parameters, commandType: CommandType.StoredProcedure);
                 conn.Dispose();
@@ -408,6 +445,5 @@ namespace SalePoint.Repository
                 throw;
             }
         }
-
     }
 }

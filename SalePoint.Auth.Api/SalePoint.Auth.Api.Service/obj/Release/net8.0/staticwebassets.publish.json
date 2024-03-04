@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tmc60DBCnOo2F3m8GX0bOdkk0lusK546aVlCPDR9L24=",
+  "Source": "SalePoint.Auth.Api.Service",
+  "BasePath": "_content/SalePoint.Auth.Api.Service",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,12 @@
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Primitives\bin\Release\net8.0\SalePoint.BulkLoad.API.Primitives.deps.json
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Primitives\bin\Release\net8.0\SalePoint.BulkLoad.API.Primitives.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Primitives\bin\Release\net8.0\SalePoint.BulkLoad.API.Primitives.pdb
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Primitives\obj\Release\net8.0\SalePoint.BulkLoad.API.Primitives.csproj.AssemblyReference.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Primitives\obj\Release\net8.0\SalePoint.BulkLoad.API.Primitives.GeneratedMSBuildEditorConfig.editorconfig
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Primitives\obj\Release\net8.0\SalePoint.BulkLoad.API.Primitives.AssemblyInfoInputs.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Primitives\obj\Release\net8.0\SalePoint.BulkLoad.API.Primitives.AssemblyInfo.cs
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Primitives\obj\Release\net8.0\SalePoint.BulkLoad.API.Primitives.csproj.CoreCompileInputs.cache
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Primitives\obj\Release\net8.0\SalePoint.BulkLoad.API.Primitives.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Primitives\obj\Release\net8.0\refint\SalePoint.BulkLoad.API.Primitives.dll
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Primitives\obj\Release\net8.0\SalePoint.BulkLoad.API.Primitives.pdb
+C:\SalePoint\app-sale-point-v1.1\SalePointBack\SalePoint.BulkLoad.API\SalePoint.BulkLoad.API.Primitives\obj\Release\net8.0\ref\SalePoint.BulkLoad.API.Primitives.dll

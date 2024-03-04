@@ -12,13 +12,9 @@ using System.Threading.Tasks;
 
 namespace SalePoint.Repository
 {
-    public class RolRepository : IRolRepository
+    public class RolRepository(IConfiguration configuration) : IRolRepository
     {
-        private readonly IConfiguration _configuration;
-        public RolRepository(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+        private readonly IConfiguration _configuration = configuration;
 
         public async Task<IEnumerable<Rol>> GetRols()
         {
@@ -37,7 +33,7 @@ namespace SalePoint.Repository
 		                                FROM Rol
 		                                WHERE IsActive = 1";
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 rols = await conn.QueryAsync<Rol>(query);
 
@@ -45,7 +41,7 @@ namespace SalePoint.Repository
             }
             catch (Exception ex)
             {
-                throw;
+                throw new Exception(ex.Message);
             }
 
             return rols;

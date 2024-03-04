@@ -7,13 +7,9 @@ using System.Data;
 
 namespace SalePoint.Repository
 {
-    public class CashRegisterRepository : ICashRegisterRepository
+    public class CashRegisterRepository(IConfiguration configuration) : ICashRegisterRepository
     {
-        private readonly IConfiguration _configuration;
-        public CashRegisterRepository(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+        private readonly IConfiguration _configuration = configuration;
 
         public async Task<int> ApplyCashFlows(CashFlows cashFlows)
         {
@@ -26,7 +22,7 @@ namespace SalePoint.Repository
                 parameters.Add("quantity", cashFlows.Quantity);
                 parameters.Add("reason", cashFlows.Reason);
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 idCashWithdrawal = await conn.QueryFirstAsync<int>("ApplyCashFlows", param: parameters, commandType: CommandType.StoredProcedure);
                 conn.Close();
@@ -48,7 +44,7 @@ namespace SalePoint.Repository
                 parameters.Add("boxcloseReasonId", cashRegister.BoxCloseReasonId);
                 parameters.Add("userId", cashRegister.UserId);
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 int cashRegisterId = await conn.QuerySingleOrDefaultAsync<int>("CloseCashRegister", parameters, commandType: CommandType.StoredProcedure);
                 conn.Close();
@@ -70,7 +66,7 @@ namespace SalePoint.Repository
                 DynamicParameters parameters = new();
                 parameters.Add("userId", userId);
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new (_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
 
                 cashRegisters = await conn.QueryAsync<CashRegister, StoreUser, BoxCloseReason, CashRegister>("GetCashRegister",
@@ -103,7 +99,7 @@ namespace SalePoint.Repository
                 parameters.Add("boxCutId", boxCutId);
                 parameters.Add("cashFlowsType", cashFlowsType);
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
 
                 cashFlows = await conn.QueryAsync<CashFlows>("GetCashFlowsDetail", param: parameters, commandType: CommandType.StoredProcedure);
@@ -126,7 +122,7 @@ namespace SalePoint.Repository
                 DynamicParameters parameters = new();
                 parameters.Add("boxCutId", boxCutId);
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
 
                 salesReturns = await conn.QueryAsync<Sale>("ShowProductReturnsByBoxCutId", param: parameters, commandType: CommandType.StoredProcedure);
@@ -148,7 +144,7 @@ namespace SalePoint.Repository
                 parameters.Add("UserId", initialAmount.UserId);
                 parameters.Add("initialAmount", initialAmount.Mount);
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
                 int cashRegisterId = await conn.QuerySingleOrDefaultAsync<int>("OpenCashRegister", parameters, commandType: CommandType.StoredProcedure);
                 conn.Close();
@@ -161,7 +157,7 @@ namespace SalePoint.Repository
             }
         }
 
-        public async Task<BoxCutOpen> ValidateBoxCutOpen(int userId, decimal change)
+        public async Task<BoxCutOpen?> ValidateBoxCutOpen(int userId, decimal change)
         {
             try
             {
@@ -169,9 +165,9 @@ namespace SalePoint.Repository
                 parameters.Add("UserId", userId);
                 parameters.Add("CashChange", change);
 
-                using IDbConnection conn = new SqlConnection(_configuration.GetConnectionString("SalePoinDB"));
+                using SqlConnection conn = new(_configuration.GetConnectionString("SalePoinDB"));
                 conn.Open();
-                BoxCutOpen boxCutOpen = await conn.QuerySingleOrDefaultAsync<BoxCutOpen>("ValidateBoxCutOpen", parameters, commandType: CommandType.StoredProcedure);
+                BoxCutOpen? boxCutOpen = await conn.QuerySingleOrDefaultAsync<BoxCutOpen?>("ValidateBoxCutOpen", parameters, commandType: CommandType.StoredProcedure);
                 conn.Close();
 
                 return boxCutOpen;

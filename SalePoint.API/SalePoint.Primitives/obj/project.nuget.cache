@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zzNusvlXXa9/AmEek2kFioFU8KMHJnZe38BrcsuDQCDbJXg+2eb/wQVWdADIJXL79a6T8XCesJekNLn7fSAfnw==",
+  "dgSpecHash": "wP0E2BY/Z2Af3C0PlmMaH1jtSv1H0I4V09IJ5hAVCaIqpA09QF2HZaHW5m7raoP3LnGxCUzOxSSTlJyBKZmONg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Downloads\\Punto de venta v2.0\\App\\Back\\SalePoint.API\\SalePoint.Primitives\\SalePoint.Primitives.csproj",
+  "projectFilePath": "C:\\SalePoint\\app-sale-point-v1.1\\SalePointBack\\SalePoint.API\\SalePoint.Primitives\\SalePoint.Primitives.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

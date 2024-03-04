@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\SalePoint\app-sale-point-v1.1\Publish to deploy\Auth</_PublishTargetUrl>
+    <History>True|2024-03-01T03:25:57.5206665Z;True|2024-01-19T00:42:35.0978539-06:00;False|2024-01-19T00:41:59.6076591-06:00;False|2024-01-19T00:41:54.0895660-06:00;True|2023-11-17T14:11:37.9412454-06:00;True|2023-08-21T19:10:59.4490920-06:00;True|2023-08-21T02:43:28.3195926-06:00;True|2023-08-19T13:11:22.4483302-06:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

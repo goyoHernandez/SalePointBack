@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SalePoint.Primitives.Interfaces;
 
 namespace SalePoint.API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class MeasurementUnitController : Controller
